@@ -1,6 +1,7 @@
 #!/bin/bash -e
-# 3dprintyourbrain
+# 3dprintyourbrain, adapted script by skjerns, original by miykael
 # usage: create_3d_brain.sh subject_name.nii.gz
+###############################################
 set -e -v # exit on error
 export FSLOUTPUTTYPE=NIFTI_GZ
 # Main folder for the whole project
@@ -13,7 +14,7 @@ export MAIN_DIR=$HOME/3dbrains
 export subject=$(echo "$subjT1" | rev | cut -f 1 -d '/' | rev | cut -f 1 -d '.')
 
 # Path to the subject (output folder)
-export SUBJECTS_DIR=$MAIN_DIR/${subject}/
+export SUBJECTS_DIR=$MAIN_DIR/${subject}/output
 
 # Path to meshlabserver 
 export MESHLAB_SERVER="/mnt/c/Program Files/VCG/MeshLab/meshlabserver.exe"
@@ -74,7 +75,7 @@ mri_tessellate $SUBJECTS_DIR/subcortical/subcortical_bin.nii.gz 1 $SUBJECTS_DIR/
 
 # Ninth, convert binary surface output into stl format
 mris_convert $SUBJECTS_DIR/subcortical/subcortical $SUBJECTS_DIR/subcortical.stl
-exit 1
+
 
 "$MESHLAB_SERVER" -i $SUBJECTS_DIR/subcortical.stl -o $SUBJECTS_DIR/subcortical.stl -m sa -s smoothing.mlx
 "$MESHLAB_SERVER" -i $SUBJECTS_DIR/cortical.stl -o $SUBJECTS_DIR/cortical.stl -m sa -s smoothing.mlx
@@ -94,8 +95,7 @@ echo 'endsolid '$SUBJECTS_DIR'/final.stl' >> $SUBJECTS_DIR/final.stl
 rm -R -- $SUBJECTS_DIR/*/
 rm $SUBJECTS_DIR/logfile
 
-
 #==========================================================================================
 #5. ScaleDependent Laplacian Smoothing, create a smoother surface: MeshLab
 #==========================================================================================
-echo ("$MESHLAB_SERVER" -i $SUBJECTS_DIR/final.stl -o $SUBJECTS_DIR/final_s.stl -s $MAIN_DIR/smoothing.mlx)
+"$MESHLAB_SERVER" -i $SUBJECTS_DIR/final.stl -o $SUBJECTS_DIR/final.stl -s close_decimate.mlx
