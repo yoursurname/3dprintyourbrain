@@ -2,22 +2,25 @@
 # 3dprintyourbrain, adapted script by skjerns, original by miykael
 # usage: create_3d_brain.sh subject_name.nii.gz
 ###############################################
+
+######### settings that you might need to adapt ########
+# Path to meshlabserver 
+export MESHLAB_SERVER="/mnt/c/Program Files/VCG/MeshLab/meshlabserver.exe"
+######### end of settings
+
 set -e -v # exit on error
+
 export FSLOUTPUTTYPE=NIFTI_GZ
 # Main folder for the whole project
 export subjT1=$1 # the NIFTI file
 
 export MAIN_DIR=$HOME/3dbrains
 
-
 # Name of the subject
 export subject=$(echo "$subjT1" | rev | cut -f 1 -d '/' | rev | cut -f 1 -d '.')
 
 # Path to the subject (output folder)
 export SUBJECTS_DIR=$MAIN_DIR/${subject}/output
-
-# Path to meshlabserver 
-export MESHLAB_SERVER="/mnt/c/Program Files/VCG/MeshLab/meshlabserver.exe"
 
 #==========================================================================================
 #2. Create Surface Model with FreeSurfer
