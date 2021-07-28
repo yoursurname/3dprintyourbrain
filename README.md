@@ -1,4 +1,4 @@
-# 3D print your brain using WSL
+# 3D print your brain using WSL (Windows 10)
 
 This is an updated version of [miykael/3dprintyourbrain](https://github.com/miykael/3dprintyourbrain) adapted to work under Windows using the Subsystem for Linux (WSL2 using Ubuntu).
 
@@ -43,7 +43,7 @@ Register your copy of FreeSurfer here [FreeSurfer Registration form](https://sur
 
 #### 1.3. Install MeshLab 2020.09 for Windows
 
-Inside the Windows host machine, install [MeshLab 2020.09](https://github.com/cnr-isti-vclab/meshlab/releases/download/Meshlab-2020.09/MeshLab2020.09-windows.exe). It's important to use this version as it's the last version containing the MeshLab Server.
+Inside the Windows host machine, install [MeshLab 2020.09](https://github.com/cnr-isti-vclab/meshlab/releases/download/Meshlab-2020.09/MeshLab2020.09-windows.exe). It's important to use this version as it's the last version containing the MeshLab Server. Running MeshLab inside WSL seems tricky and may require to add XGD window support. So instead we just use a Windows installation of MeshLab and do not install it in WSL.
 
 ### 2. Setup the script
 
