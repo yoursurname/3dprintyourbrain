@@ -4,7 +4,7 @@ This is an updated version of [miykael/3dprintyourbrain](https://github.com/miyk
 
 For this project I'm using
 
-1. Ubuntu 18 on WSL2 (Windows 10)
+1. [Ubuntu 18 on WSL2 (Windows 10)](https://ubuntu.com/wsl)
 
 2. [FreeSurfer 7-dev](https://surfer.nmr.mgh.harvard.edu/fswiki/FS7_wsl_ubuntu)
 
@@ -45,8 +45,6 @@ Register your copy of FreeSurfer here [FreeSurfer Registration form](https://sur
 
 Inside the Windows host machine, install [MeshLab 2020.09](https://github.com/cnr-isti-vclab/meshlab/releases/download/Meshlab-2020.09/MeshLab2020.09-windows.exe). It's important to use this version as it's the last version containing the MeshLab Server.
 
-
-
 ### 2. Setup the script
 
 Copy the contents of this repository inside your home dir in WSL.
@@ -57,12 +55,8 @@ Your home dir should look like this
 
 type `nano create_3d_brain.sh` and check if the MESHLAB_SERVER in line 8 points to the correct location of your `meshlabserver.exe` on your windows machine
 
-
-
 ### 3. Run the script
 
 Copy your NIFTI file (`subjectname.nii.gz`) to the home dir and simply run `sh create_3d_brain.sh subjectsname.nii.gz`. The whole process will take a few hours, depending on your machine speed. In the end there should be a `final.stl` in the folder `~/3dbrains/subjectname/output/final.stl`
-
-
 
 Have fun with it :)
