@@ -51,7 +51,7 @@ Copy the contents of this repository inside your home dir in WSL.
 
 Your home dir should look like this
 
-![](\md_assets\2021-07-28-09-50-41-image.png)
+![](.\md_assets\2021-07-28-09-50-41-image.png)
 
 type `nano create_3d_brain.sh` and check if the MESHLAB_SERVER in line 8 points to the correct location of your `meshlabserver.exe` on your windows machine
 
