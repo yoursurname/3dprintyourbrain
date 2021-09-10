@@ -63,4 +63,9 @@ Have fun with it :)
 
 ## 4. Print the stand and connect to the Brain
 
-coming soon, if I find time to write it. Open an issue if I've forgotten and you need help
+
+1. I use small metal rods  to connect the stand and the brain. Just find one in your local DIY store, 2mm is good. Then you can either drill holes for connection or model them directly into the 3D model. Just connecting it via PLA (3D print) will not work.
+2. For modelling and adaptations I use http://tinkercad.com , else Meshlab or Blender also work fine but are a bit more complex
+3. So far I printed everything using http://treatstock.co.uk at 45% size, the stand will fit nicely. Most brains will be around 7-8cm length when using 45% scaling.
+
+If you have further questions, feel free to open an issue. Connecting the stand to the brain is the most fidgety of all the steps in the guide and requires some trying out yourself.
