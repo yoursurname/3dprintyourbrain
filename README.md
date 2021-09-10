@@ -60,3 +60,7 @@ type `nano create_3d_brain.sh` and check if the MESHLAB_SERVER in line 8 points 
 Copy your NIFTI file (`subjectname.nii.gz`) to the home dir and simply run `sh create_3d_brain.sh subjectsname.nii.gz`. The whole process will take a few hours, depending on your machine speed. In the end there should be a `final.stl` in the folder `~/3dbrains/subjectname/output/final.stl`
 
 Have fun with it :)
+
+## 4. Print the stand and connect to the Brain
+
+coming soon, if I find time to write it. Open an issue if I've forgotten and you need help
