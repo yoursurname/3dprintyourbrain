@@ -71,4 +71,4 @@ If you have further questions, feel free to open an issue. Connecting the stand 
 
 
 
-<img src="file:///C:/Users/Simon/Desktop/3dprintyourbrain/md_assets/d0b4d2576c06abc6906e0ea98ce6b0b75e08e493.jpg" title="" alt="2021-09-11 09.13.41.jpg" width="367">
+<img src="./md_assets/d0b4d2576c06abc6906e0ea98ce6b0b75e08e493.jpg" title="" alt="2021-09-11 09.13.41.jpg" width="367">
