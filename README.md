@@ -1,3 +1,5 @@
+<img title="" src="file:///C:/Users/Simon/Desktop/3dprintyourbrain/md_assets/3a5b470407b7d8dcfb1e6cfee7a785ca425898a8.jpg" alt="2021-09-11 10.44.37.jpg" width="203" data-align="left">
+
 # 3D print your brain using WSL (Windows 10)
 
 This is an updated version of [miykael/3dprintyourbrain](https://github.com/miykael/3dprintyourbrain) adapted to work under Windows using the Subsystem for Linux (WSL2 using Ubuntu).
@@ -68,7 +70,5 @@ Have fun with it :)
 3. So far I printed everything using http://treatstock.co.uk at 45% size, which is also the ratio the stand will fit nicely. Most brains will be around 7-8cm length when using 45% scaling.
 
 If you have further questions, feel free to open an issue. Connecting the stand to the brain is the most fidgety of all the steps in the guide and requires some trying out yourself.
-
-
 
 <img src="file:///C:/Users/Simon/Desktop/3dprintyourbrain/md_assets/d0b4d2576c06abc6906e0ea98ce6b0b75e08e493.jpg" title="" alt="2021-09-11 09.13.41.jpg" width="367">
